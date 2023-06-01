@@ -17,14 +17,4 @@ spec:
         image: nanajanashia/argocd-app:1.2
         ports:
         - containerPort: 8080
-         env:
-            - name: USERNAME
-              valueFrom:
-                secretKeyRef:
-                  name: github-credentials
-                  key: username
-            - name: PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: github-credentials
-                  key: password
+        
